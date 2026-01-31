@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="paytmGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002e6e"/>
+      <stop offset="100%" stop-color="#00baf2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card/Wallet Shape -->
+  <rect x="20" y="50" width="160" height="100" rx="15" fill="url(#paytmGrad)"/>
+  
+  <!-- Shine -->
+  <path d="M20 150 L20 50 L80 50 Z" fill="#fff" opacity="0.1"/>
+
+  <!-- "Pay" Text -->
+  <text 
+    x="100" 
+    y="115" 
+    text-anchor="middle" 
+    font-family="Arial, sans-serif" 
+    font-weight="bold" 
+    font-size="48" 
+    fill="#fff"
+    font-style="italic"
+  >Pay</text>
+  
+  <!-- Checkmark/Tick symbol representing verified -->
+  <circle cx="150" cy="70" r="15" fill="#fff"/>
+  <path 
+    d="M145 70 L148 74 L156 64" 
+    stroke="#00baf2" 
+    stroke-width="3" 
+    fill="none" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+
+  <!-- Speed Lines -->
+  <path d="M10 90 L-10 90" stroke="#00baf2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M10 100 L-5 100" stroke="#00baf2" stroke-width="2" stroke-linecap="round"/>
+  <path d="M10 110 L-10 110" stroke="#00baf2" stroke-width="2" stroke-linecap="round"/>
+</svg>
