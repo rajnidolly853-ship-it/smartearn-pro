@@ -1,0 +1,103 @@
+# ============================================
+# 🤖 SMARTEARN PRO - ROBOTS.TXT
+# ============================================
+# This file tells search engine crawlers which 
+# pages or files they can or cannot request.
+
+# Allow all crawlers
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Disallow admin and API routes (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_*/
+
+# Disallow private user data routes
+Disallow: /*?action=withdraw*
+Disallow: /*?token=*
+Disallow: /*?session=*
+
+# Disallow common non-content paths
+Disallow: /cdn-cgi/
+Disallow: /.well-known/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Sitemap location
+Sitemap: https://smartearnpro.app/sitemap.xml
+
+# ============================================
+# 📊 SPECIFIC CRAWLER RULES
+# ============================================
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /icons/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest
+User-agent: Pinterest
+Allow: /
+
+# ============================================
+# 🚫 BLOCK BAD BOTS
+# ============================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SearchmetricsBot
+Disallow: /
+
+# ============================================
+# 📝 NOTES
+# ============================================
+# - PWA assets (manifest, service worker) are allowed
+# - All public images and icons are accessible
+# - User-specific routes with query params are blocked
+# - Update sitemap URL when deploying to production
