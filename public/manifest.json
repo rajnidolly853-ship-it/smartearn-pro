@@ -1,0 +1,197 @@
+{
+  "name": "SmartEarn Pro – Rewards & Micro-Earning",
+  "short_name": "SmartEarn Pro",
+  "description": "Earn real rewards by completing tasks, watching ads, daily check-ins, spin wheel, and referrals. Withdraw via UPI, Paytm, or Gift Cards.",
+  "start_url": "/",
+  "id": "smartearn-pro-pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "theme_color": "#0a0a0f",
+  "background_color": "#0a0a0f",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["finance", "lifestyle", "utilities"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
+  
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/maskable-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  
+  "screenshots": [
+    {
+      "src": "/images/screenshots/home-screen.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home Dashboard - View your earnings and quick actions"
+    },
+    {
+      "src": "/images/screenshots/earn-screen.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Earn Screen - Multiple ways to earn rewards"
+    },
+    {
+      "src": "/images/screenshots/wallet-screen.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Wallet - Track and withdraw your earnings"
+    },
+    {
+      "src": "/images/screenshots/spin-wheel.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Spin Wheel - Try your luck and win coins"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "Daily Check-In",
+      "short_name": "Check-In",
+      "description": "Claim your daily reward bonus",
+      "url": "/?action=checkin",
+      "icons": [
+        {
+          "src": "/icons/shortcut-checkin.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Spin & Win",
+      "short_name": "Spin",
+      "description": "Spin the wheel to win coins",
+      "url": "/?action=spin",
+      "icons": [
+        {
+          "src": "/icons/shortcut-spin.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Watch & Earn",
+      "short_name": "Earn",
+      "description": "Watch ads to earn rewards",
+      "url": "/?action=watchads",
+      "icons": [
+        {
+          "src": "/icons/shortcut-earn.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Withdraw",
+      "short_name": "Withdraw",
+      "description": "Withdraw your earnings",
+      "url": "/?action=withdraw",
+      "icons": [
+        {
+          "src": "/icons/shortcut-withdraw.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  
+  "related_applications": [],
+  
+  "protocol_handlers": [
+    {
+      "protocol": "web+smartearn",
+      "url": "/?referral=%s"
+    }
+  ],
+  
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  
+  "handle_links": "preferred",
+  
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+    }
