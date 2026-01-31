@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <!-- ============================================ -->
+  <!-- 📱 META TAGS - Basic -->
+  <!-- ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- ============================================ -->
+  <!-- 📝 SEO META TAGS -->
+  <!-- ============================================ -->
+  <title>SmartEarn Pro – Rewards & Micro-Earning App</title>
+  <meta name="description" content="Earn real rewards by completing tasks, watching ads, daily check-ins, spin wheel, and referrals. Withdraw via UPI, Paytm, or Gift Cards." />
+  <meta name="keywords" content="earn money, rewards app, micro earning, watch ads earn, daily check-in rewards, spin wheel, referral bonus, UPI withdraw, Paytm rewards" />
+  <meta name="author" content="SmartEarn Pro Team" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  
+  <!-- ============================================ -->
+  <!-- 🎨 THEME & COLORS -->
+  <!-- ============================================ -->
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="msapplication-TileColor" content="#0a0a0f" />
+  <meta name="msapplication-navbutton-color" content="#0a0a0f" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  
+  <!-- ============================================ -->
+  <!-- 📱 PWA / MOBILE META TAGS -->
+  <!-- ============================================ -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="SmartEarn Pro" />
+  <meta name="application-name" content="SmartEarn Pro" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  
+  <!-- ============================================ -->
+  <!-- 🔗 CANONICAL & MANIFEST -->
+  <!-- ============================================ -->
+  <link rel="canonical" href="https://smartearnpro.app/" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- ============================================ -->
+  <!-- 🖼️ FAVICON & ICONS -->
+  <!-- ============================================ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96x96.png" />
+  
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180x180.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="/icons/icon-167x167.png" />
+  
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileImage" content="/icons/icon-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="/icons/icon-72x72.png" />
+  <meta name="msapplication-square150x150logo" content="/icons/icon-152x152.png" />
+  <meta name="msapplication-square310x310logo" content="/icons/icon-384x384.png" />
+  
+  <!-- Safari Pinned Tab -->
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#00ff88" />
+  
+  <!-- ============================================ -->
+  <!-- 🌐 OPEN GRAPH META TAGS -->
+  <!-- ============================================ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://smartearnpro.app/" />
+  <meta property="og:title" content="SmartEarn Pro – Rewards & Micro-Earning App" />
+  <meta property="og:description" content="Earn real rewards by completing tasks, watching ads, daily check-ins, and referrals. Withdraw via UPI, Paytm, or Gift Cards." />
+  <meta property="og:image" content="https://smartearnpro.app/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="SmartEarn Pro App" />
+  <meta property="og:site_name" content="SmartEarn Pro" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- ============================================ -->
+  <!-- 🐦 TWITTER CARD META TAGS -->
+  <!-- ============================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://smartearnpro.app/" />
+  <meta name="twitter:title" content="SmartEarn Pro – Rewards & Micro-Earning App" />
+  <meta name="twitter:description" content="Earn real rewards by completing tasks, watching ads, daily check-ins, and referrals." />
+  <meta name="twitter:image" content="https://smartearnpro.app/images/twitter-image.png" />
+  <meta name="twitter:creator" content="@smartearnpro" />
+  
+  <!-- ============================================ -->
+  <!-- 🔤 FONTS - Preload Critical Fonts -->
+  <!-- ============================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- ============================================ -->
+  <!-- 🎨 CRITICAL CSS - Prevent Flash -->
+  <!-- ============================================ -->
+  <style>
+    /* Critical CSS for initial load */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+    }
+    
+    html, body, #root {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #0a0a0f;
+      color: #ffffff;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    
+    #root {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Splash Screen Loader */
+    .splash-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #0a0a0f 0%, #1a1a23 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .splash-loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+    .splash-logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 24px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    .splash-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00ff88 0%, #00f5ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+    
+    .splash-subtext {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 32px;
+    }
+    
+    .splash-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(0, 255, 136, 0.2);
+      border-top-color: #00ff88;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    /* Disable overscroll on iOS */
+    body {
+      overscroll-behavior-y: none;
+    }
+    
+    /* Safe area padding for notched devices */
+    @supports (padding: max(0px)) {
+      body {
+        padding-top: max(0px, env(safe-area-inset-top));
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+      }
+    }
+    
+    /* Hide splash after app loads */
+    .app-loaded .splash-loader {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  </style>
+  
+  <!-- ============================================ -->
+  <!-- 📊 ANALYTICS (Will be loaded after consent) -->
+  <!-- ============================================ -->
+  <!-- Google Analytics will be initialized via JS after user consent -->
+</head>
+<body>
+  <!-- ============================================ -->
+  <!-- 🚀 SPLASH SCREEN (Shows while React loads) -->
+  <!-- ============================================ -->
+  <div id="splash-loader" class="splash-loader">
+    <!-- Logo SVG Placeholder -->
+    <svg class="splash-logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="60" cy="60" r="56" stroke="url(#gradient)" stroke-width="4" fill="none"/>
+      <path d="M60 25L75 50H45L60 25Z" fill="url(#gradient)"/>
+      <circle cx="60" cy="70" r="20" fill="url(#gradient)" opacity="0.8"/>
+      <path d="M52 68L58 74L70 62" stroke="#0a0a0f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00ff88"/>
+          <stop offset="100%" stop-color="#00f5ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="splash-text">SmartEarn Pro</div>
+    <div class="splash-subtext">Rewards & Micro-Earning</div>
+    <div class="splash-spinner"></div>
+  </div>
+  
+  <!-- ============================================ -->
+  <!-- 📱 REACT APP ROOT -->
+  <!-- ============================================ -->
+  <div id="root"></div>
+  
+  <!-- ============================================ -->
+  <!-- ⚠️ NO JAVASCRIPT FALLBACK -->
+  <!-- ============================================ -->
+  <noscript>
+    <div style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #0a0a0f;
+      color: #ffffff;
+      text-align: center;
+      padding: 24px;
+      font-family: 'Inter', sans-serif;
+    ">
+      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8" x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <h1 style="margin-top: 24px; font-size: 24px; color: #00ff88;">JavaScript Required</h1>
+      <p style="margin-top: 12px; color: rgba(255,255,255,0.7); max-width: 300px;">
+        SmartEarn Pro requires JavaScript to run. Please enable JavaScript in your browser settings and reload the page.
+      </p>
+    </div>
+  </noscript>
+  
+  <!-- ============================================ -->
+  <!-- 📜 MAIN SCRIPT -->
+  <!-- ============================================ -->
+  <script type="module" src="/src/main.tsx"></script>
+  
+  <!-- ============================================ -->
+  <!-- 🔧 SPLASH SCREEN HANDLER -->
+  <!-- ============================================ -->
+  <script>
+    // Hide splash screen when app is ready
+    window.addEventListener('load', function() {
+      // Wait a bit for React to mount
+      setTimeout(function() {
+        var splash = document.getElementById('splash-loader');
+        if (splash) {
+          splash.classList.add('hidden');
+          // Remove from DOM after animation
+          setTimeout(function() {
+            if (splash.parentNode) {
+              splash.parentNode.removeChild(splash);
+            }
+          }, 500);
+        }
+        document.body.classList.add('app-loaded');
+      }, 1000);
+    });
+    
+    // Handle PWA install prompt
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      deferredPrompt = e;
+      window.dispatchEvent(new CustomEvent('pwa-install-available'));
+    });
+    
+    // Track if app is installed
+    window.addEventListener('appinstalled', function() {
+      deferredPrompt = null;
+      window.dispatchEvent(new CustomEvent('pwa-installed'));
+    });
+    
+    // Expose install function globally
+    window.installPWA = async function() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        deferredPrompt = null;
+        return outcome === 'accepted';
+      }
+      return false;
+    };
+  </script>
+</body>
+    </html>
