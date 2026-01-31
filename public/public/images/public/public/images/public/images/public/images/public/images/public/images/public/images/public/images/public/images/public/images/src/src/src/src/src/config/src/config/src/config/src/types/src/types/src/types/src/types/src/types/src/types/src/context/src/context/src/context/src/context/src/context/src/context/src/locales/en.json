@@ -1,0 +1,83 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "success": "Success",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "submit": "Submit",
+    "balance": "Balance"
+  },
+  "auth": {
+    "welcome": "Welcome to SmartEarn Pro",
+    "subtitle": "Earn real money by completing simple tasks",
+    "login_google": "Continue with Google",
+    "login_guest": "Continue as Guest",
+    "guest_warning": "Guest accounts cannot withdraw earnings. Please login to save progress.",
+    "logging_in": "Logging in..."
+  },
+  "home": {
+    "hello": "Hello,",
+    "total_balance": "Total Balance",
+    "withdraw": "Withdraw",
+    "earn_more": "Earn More",
+    "quick_tasks": "Quick Tasks",
+    "daily_checkin": "Daily Check-in",
+    "spin_wheel": "Spin & Win",
+    "watch_ads": "Watch Ads",
+    "refer_friend": "Refer & Earn"
+  },
+  "earn": {
+    "title": "Earn Coins",
+    "subtitle": "Complete tasks to earn more",
+    "watch_ad_btn": "Watch Video",
+    "watch_ad_reward": "+10 Coins",
+    "spin_now": "Spin Now",
+    "spins_left": "Spins left today:",
+    "checkin_title": "Daily Bonus",
+    "checkin_subtitle": "Come back daily to increase your streak",
+    "claim": "Claim",
+    "claimed": "Claimed"
+  },
+  "wallet": {
+    "title": "My Wallet",
+    "current_balance": "Current Balance",
+    "coins": "Coins",
+    "approx_value": "Approx Value",
+    "withdraw_btn": "Request Withdrawal",
+    "history": "Transaction History",
+    "no_transactions": "No transactions yet",
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "min_withdraw": "Min withdrawal is"
+  },
+  "referral": {
+    "title": "Refer & Earn",
+    "share_code": "Share your referral code",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "invite_text": "Invite friends and earn 50 coins each!",
+    "my_referrals": "My Referrals",
+    "earnings": "Earnings"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "profile": "My Profile",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "support": "Contact Support",
+    "logout": "Logout",
+    "version": "Version"
+  },
+  "errors": {
+    "insufficient_balance": "Insufficient balance",
+    "ad_not_ready": "Ad is not ready yet. Please wait.",
+    "daily_limit": "Daily limit reached",
+    "network_error": "Network error. Check connection."
+  }
+  }
