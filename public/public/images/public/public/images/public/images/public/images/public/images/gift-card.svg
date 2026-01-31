@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+  <defs>
+    <!-- Card Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a23"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+    
+    <!-- Neon Accent -->
+    <linearGradient id="neonStrip" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Body -->
+  <rect x="10" y="10" width="280" height="180" rx="15" fill="url(#cardBg)" stroke="#333" stroke-width="2"/>
+
+  <!-- Magnetic Strip Area (Top) -->
+  <rect x="10" y="40" width="280" height="40" fill="#000" opacity="0.5"/>
+
+  <!-- Neon Accent Line -->
+  <rect x="10" y="80" width="280" height="4" fill="url(#neonStrip)"/>
+
+  <!-- Chip Icon -->
+  <rect x="40" y="100" width="40" height="30" rx="4" fill="#ffd700" opacity="0.8"/>
+  <path d="M40 110 h40 M40 120 h40 M55 100 v30" stroke="#b8860b" stroke-width="1"/>
+
+  <!-- Text Placeholder -->
+  <rect x="40" y="150" width="120" height="10" rx="2" fill="#555"/>
+  <rect x="40" y="165" width="80" height="10" rx="2" fill="#555"/>
+
+  <!-- Logo Placeholder (Bottom Right) -->
+  <circle cx="240" cy="150" r="20" fill="none" stroke="#00ff88" stroke-width="3"/>
+  <circle cx="260" cy="150" r="20" fill="none" stroke="#00f5ff" stroke-width="3"/>
+
+  <!-- Shine Effect -->
+  <path d="M10 190 L100 10 L150 10 L60 190 Z" fill="#fff" opacity="0.05"/>
+</svg>
