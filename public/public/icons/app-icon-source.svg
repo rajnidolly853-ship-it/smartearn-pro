@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Main Gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#00e5a0"/>
+      <stop offset="100%" stop-color="#00f5ff"/>
+    </linearGradient>
+    
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#1a1a23"/>
+    </linearGradient>
+    
+    <!-- Gold Gradient for Coin -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffb800"/>
+      <stop offset="100%" stop-color="#ffd700"/>
+    </linearGradient>
+    
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Inner Shadow -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+      <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+      <feFlood flood-color="black" flood-opacity="0.3" result="color"/>
+      <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Outer Ring Glow -->
+  <circle 
+    cx="256" 
+    cy="256" 
+    r="230" 
+    fill="none" 
+    stroke="url(#mainGradient)" 
+    stroke-width="4"
+    opacity="0.6"
+    filter="url(#glow)"
+  />
+  
+  <!-- Main Border Ring -->
+  <circle 
+    cx="256" 
+    cy="256" 
+    r="220" 
+    fill="none" 
+    stroke="url(#mainGradient)" 
+    stroke-width="8"
+    opacity="0.9"
+  />
+  
+  <!-- Inner Decorative Ring -->
+  <circle 
+    cx="256" 
+    cy="256" 
+    r="200" 
+    fill="none" 
+    stroke="url(#mainGradient)" 
+    stroke-width="2"
+    opacity="0.4"
+    stroke-dasharray="20 10"
+  />
+  
+  <!-- Central Coin/Dollar Symbol -->
+  <g transform="translate(256, 256)" filter="url(#innerShadow)">
+    <!-- Coin Circle -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="100" 
+      fill="url(#goldGradient)"
+    />
+    
+    <!-- Coin Inner Ring -->
+    <circle 
+      cx="0" 
+      cy="0" 
+      r="85" 
+      fill="none" 
+      stroke="#b8860b" 
+      stroke-width="3"
+      opacity="0.6"
+    />
+    
+    <!-- Dollar Sign -->
+    <text 
+      x="0" 
+      y="12" 
+      text-anchor="middle" 
+      font-family="Arial, sans-serif" 
+      font-size="90" 
+      font-weight="bold" 
+      fill="#0a0a0f"
+    >₹</text>
+    
+    <!-- Top decorative line -->
+    <line x1="0" y1="-70" x2="0" y2="-55" stroke="#0a0a0f" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Bottom decorative line -->
+    <line x1="0" y1="55" x2="0" y2="70" stroke="#0a0a0f" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Sparkle Effects -->
+  <!-- Top Right Sparkle -->
+  <g transform="translate(380, 130)">
+    <path 
+      d="M0,-15 L3,-3 L15,0 L3,3 L0,15 L-3,3 L-15,0 L-3,-3 Z" 
+      fill="#00ff88"
+      opacity="0.9"
+    />
+  </g>
+  
+  <!-- Top Left Sparkle -->
+  <g transform="translate(130, 150)">
+    <path 
+      d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z" 
+      fill="#00f5ff"
+      opacity="0.8"
+    />
+  </g>
+  
+  <!-- Bottom Sparkle -->
+  <g transform="translate(350, 380)">
+    <path 
+      d="M0,-12 L2.5,-2.5 L12,0 L2.5,2.5 L0,12 L-2.5,2.5 L-12,0 L-2.5,-2.5 Z" 
+      fill="#00ff88"
+      opacity="0.85"
+    />
+  </g>
+  
+  <!-- Small accent dots -->
+  <circle cx="160" cy="350" r="6" fill="#00f5ff" opacity="0.7"/>
+  <circle cx="400" cy="280" r="5" fill="#00ff88" opacity="0.6"/>
+  <circle cx="120" cy="250" r="4" fill="#ffd700" opacity="0.5"/>
+  
+  <!-- Arrow Up (Growth indicator) -->
+  <g transform="translate(380, 350)">
+    <path 
+      d="M0,20 L0,-10 M-10,0 L0,-10 L10,0" 
+      stroke="url(#mainGradient)" 
+      stroke-width="6" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+      fill="none"
+      filter="url(#glow)"
+    />
+  </g>
+</svg>
