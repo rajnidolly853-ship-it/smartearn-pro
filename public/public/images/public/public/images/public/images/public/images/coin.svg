@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gold Gradient -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5c3"/>
+      <stop offset="20%" stop-color="#ffd700"/>
+      <stop offset="50%" stop-color="#ffb800"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    
+    <!-- Edge Gradient -->
+    <linearGradient id="edge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#fff5c3"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    
+    <!-- Shadow -->
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#dropShadow)">
+    <!-- Outer Edge (Thickness) -->
+    <circle cx="100" cy="104" r="90" fill="#b8860b"/>
+    
+    <!-- Main Face -->
+    <circle cx="100" cy="100" r="90" fill="url(#gold)"/>
+    
+    <!-- Inner Groove -->
+    <circle cx="100" cy="100" r="75" fill="none" stroke="#b8860b" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Dashed Ring -->
+    <circle cx="100" cy="100" r="82" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5 5" opacity="0.4"/>
+    
+    <!-- Currency Symbol -->
+    <text x="100" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="90" fill="#b8860b" opacity="0.3">₹</text>
+    <text x="98" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="90" fill="#7a5901">₹</text>
+    
+    <!-- Shine Highlight -->
+    <ellipse cx="60" cy="60" rx="30" ry="15" fill="#fff" opacity="0.4" transform="rotate(-45, 60, 60)"/>
+    
+    <!-- Star Sparkle -->
+    <path d="M160 40 L163 48 L171 51 L163 54 L160 62 L157 54 L149 51 L157 48 Z" fill="#fff"/>
+  </g>
+</svg>
