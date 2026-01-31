@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="60" height="80">
+  <defs>
+    <linearGradient id="pointerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <filter id="dropShadowPointer">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#dropShadowPointer)">
+    <!-- Main Triangle Body -->
+    <path 
+      d="M10 0 L50 0 L30 60 Z" 
+      fill="url(#pointerGrad)" 
+      stroke="#1e293b" 
+      stroke-width="2"
+    />
+    
+    <!-- Top Cap (Round) -->
+    <circle cx="30" cy="0" r="22" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+    
+    <!-- Inner Detail (Neon Gem) -->
+    <circle cx="30" cy="0" r="10" fill="#ef4444" stroke="#fff" stroke-width="2"/>
+    
+    <!-- Shine -->
+    <path d="M30 60 L30 10 L45 0" fill="#fff" opacity="0.2"/>
+  </g>
+</svg>
