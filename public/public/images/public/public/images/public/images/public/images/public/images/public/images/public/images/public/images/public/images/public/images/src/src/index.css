@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================= */
+/* 🎨 GLOBAL ROOT STYLES */
+/* ========================================= */
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #1a1a23;
+  --color-primary: #00ff88;
+  --color-secondary: #00f5ff;
+  --header-height: 60px;
+  --nav-height: 70px;
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  user-select: none; /* Prevent text selection for app-like feel */
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ========================================= */
+/* 📱 SCROLLBAR CUSTOMIZATION */
+/* ========================================= */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================= */
+/* 🧩 UTILITY CLASSES */
+/* ========================================= */
+.font-display {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #00ff88 0%, #00f5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism Card Base */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+/* ========================================= */
+/* 🎬 ANIMATION UTILITIES */
+/* ========================================= */
+.animate-enter {
+  animation: enter 0.3s ease-out forwards;
+}
+
+@keyframes enter {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Pull to refresh indicator */
+.ptr-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--color-primary);
+  z-index: 10;
+  text-align: center;
+  height: 50px;
+}
+
+.ptr-element .genericon {
+  opacity: .6;
+  font-size: 34px;
+  width: auto;
+  height: auto;
+  transition: all .25s ease;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-top: 5px;
+}
+
+.ptr-refresh .ptr-element .genericon {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.ptr-loading .ptr-element .genericon,
+.ptr-reset .ptr-element .genericon {
+  display: none;
+  }
