@@ -1,0 +1,248 @@
+# ============================================
+# 🚫 SMARTEARN PRO - GIT IGNORE
+# ============================================
+
+# ============================================
+# 📦 DEPENDENCIES
+# ============================================
+node_modules/
+.pnp/
+.pnp.js
+.yarn/
+
+# ============================================
+# 🔧 BUILD OUTPUT
+# ============================================
+dist/
+dist-ssr/
+build/
+*.local
+*.tsbuildinfo
+
+# ============================================
+# 🔐 ENVIRONMENT & SECRETS
+# ============================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+*.pem
+*.key
+*.cert
+secrets/
+.secrets/
+
+# ⚠️ KEEP .env.example for reference
+!.env.example
+
+# ============================================
+# 📝 LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================
+# 💻 EDITOR & IDE
+# ============================================
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# 🖥️ OPERATING SYSTEM
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# 🧪 TESTING
+# ============================================
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+htmlcov/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============================================
+# 🔄 CACHE
+# ============================================
+.cache/
+.parcel-cache/
+.vite/
+*.cache
+.eslintcache
+.stylelintcache
+.prettiercache
+.npm/
+.temp/
+.tmp/
+
+# ============================================
+# 📊 REPORTS & DOCUMENTATION
+# ============================================
+reports/
+*.report.html
+*.report.json
+docs/_build/
+
+# ============================================
+# 🔥 FIREBASE
+# ============================================
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+firestore-debug.log
+ui-debug.log
+database-debug.log
+storage-debug.log
+.firebaserc
+
+# ============================================
+# 📱 MOBILE / PWA
+# ============================================
+# Service Worker generated files (keep in dist)
+sw.js
+workbox-*.js
+
+# ============================================
+# 🗄️ DATABASE & STORAGE
+# ============================================
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+data/
+storage/
+
+# ============================================
+# 📦 PACKAGE MANAGERS
+# ============================================
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ⚠️ Uncomment if you want to commit lock file
+# !package-lock.json
+# !yarn.lock
+# !pnpm-lock.yaml
+
+# ============================================
+# 🎨 DESIGN FILES
+# ============================================
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xd
+
+# ============================================
+# 🗜️ COMPRESSED FILES
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# 📹 MEDIA FILES (Large)
+# ============================================
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mp3
+*.wav
+
+# ============================================
+# 🔧 MISCELLANEOUS
+# ============================================
+*.bak
+*.backup
+*.orig
+*.pid
+*.seed
+*.pid.lock
+*.tgz
+.grunt
+bower_components/
+lib-cov/
+.lock-wscript
+jspm_packages/
+typings/
+.fusebox/
+.dynamodb/
+.serverless/
+.tern-port
+.vercel
+.netlify
+.amplify
+
+# ============================================
+# 📋 PROJECT SPECIFIC
+# ============================================
+# Add any project-specific ignores below
+NOTES.md
+TODO.md
+.scratch/
+temp/
