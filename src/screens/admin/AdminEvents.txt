@@ -1,0 +1,74 @@
+import React, { useState, useEffect } from 'react';
+import MainLayout from '../../layouts/MainLayout';
+import { getSystemConfig, updateSystemConfig } from '../../services/admin.service';
+import { SystemConfig } from '../../types/admin.types';
+import Input from '../../components/common/Input';
+import Button from '../../components/common/Button';
+import Loader from '../../components/common/Loader';
+
+const AdminEvents: React.FC = () => {
+  const [config, setConfig] = useState<SystemConfig | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [eventName, setEventName] = useState('');
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    loadConfig();
+  }, []);
+
+  const loadConfig = async () => {
+    const data = await getSystemConfig();
+    if (data) {
+      setConfig(data);
+      setEventName(data.announcement || '');
+      setIsActive(!!data.announcement);
+    }
+    setLoading(false);
+  };
+
+  const handleSave = async () => {
+    setSaving(true);
+    await updateSystemConfig({
+      announcement: isActive ? eventName : '',
+    });
+    alert("🎉 Event Updated Successfully!");
+    setSaving(false);
+  };
+
+  if (loading) return <Loader fullScreen />;
+
+  return (
+    <MainLayout headerTitle="🎉 Event Manager" showBackButton>
+      <div className="p-4 pb-24">
+        <div className="bg-dark-800 border border-white/5 p-4 rounded-2xl flex items-center justify-between mb-6">
+          <div>
+            <h3 className="text-white font-bold">Activate Festival Mode</h3>
+            <p className="text-xs text-gray-400">Show banners & popups to all users</p>
+          </div>
+          <button onClick={() => setIsActive(!isActive)} className={`w-12 h-6 rounded-full p-1 transition-colors duration-300 ${isActive ? 'bg-neon-500' : 'bg-dark-950 border border-white/20'}`}>
+            <div className={`w-4 h-4 rounded-full bg-white shadow-sm transform transition-transform duration-300 ${isActive ? 'translate-x-6' : 'translate-x-0'}`} />
+          </button>
+        </div>
+
+        {isActive && (
+          <div className="bg-dark-900 border border-neon-500/30 p-6 rounded-2xl animate-fade-in shadow-[0_0_30px_rgba(0,255,136,0.1)]">
+            <h4 className="text-neon-400 font-bold mb-4 flex items-center gap-2"><span>✨</span> Configure Event</h4>
+            <Input label="Event Name (Shown in App)" placeholder="e.g. Diwali Dhamaka 🪔" value={eventName} onChange={(e) => setEventName(e.target.value)} className="mb-4" />
+            <div className="bg-yellow-500/10 border border-yellow-500/20 p-3 rounded-xl mb-4">
+              <p className="text-xs text-yellow-200"><strong>Tip:</strong> Users will see this banner on the Home Screen immediately.</p>
+            </div>
+          </div>
+        )}
+
+        <div className="fixed bottom-8 left-4 right-4">
+          <Button variant="primary" fullWidth size="lg" onClick={handleSave} isLoading={saving} className="shadow-neon">
+            {isActive ? '🚀 Launch Event' : '💾 Save Changes'}
+          </Button>
+        </div>
+      </div>
+    </MainLayout>
+  );
+};
+
+export default AdminEvents;
